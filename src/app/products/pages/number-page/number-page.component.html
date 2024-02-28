@@ -1,0 +1,21 @@
+<p-panel header="Pipes númericos" class="p-1">
+  <p>Pipes incluidos en angular - Usualmente en el Commun Module</p>
+</p-panel>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-4">
+    <p-card header="decimal">
+      {{(totalAmount+26952)|number:'1.2-2' }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="currency">
+      {{totalAmount|currency:'PEN':'symbol-narrow'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="percent">
+      {{percent|percent:'1.2-2' }}
+    </p-card>
+  </div>
+</div>
